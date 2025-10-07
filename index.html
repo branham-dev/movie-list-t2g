@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Movie List</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body class="">
+		<div class="main-container">
+			<header class="header">
+				<h1>Movie to Watch</h1>
+			</header>
+			<main>
+				<div class="movies">
+					<div class="movies__edit-container hidden" id="movies-edit-container">
+						<div class="movies__edit-inner-container">
+							<form action="" class="edit-form" id="movie-edit-form">
+								<h2 class="edit-header">Edit Movie</h2>
+								<label for=""></label>
+								<input type="text" class="edit-input" />
+								<button class="edit-button" id="movie-edit-button" type="submit">Save</button>
+							</form>
+						</div>
+					</div>
+					<ul class="movies__ul" id="movies-ul">
+						<li class="movies__li">
+							<span>The Intern</span>
+							<div class="movies__buttons">
+								<button class="movies__edit">Edit</button>
+								<button class="movies__delete">Delete</button>
+							</div>
+						</li>
+					</ul>
+					<form action="" class="form" id="movie-form">
+						<label for="movie-input"></label>
+						<input
+							type="text"
+							id="movie-input"
+							placeholder="Add your Movie"
+							class="form__input form__input--text" />
+						<button class="movies__add">Add</button>
+					</form>
+				</div>
+			</main>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
